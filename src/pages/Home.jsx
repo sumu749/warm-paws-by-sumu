@@ -1,11 +1,9 @@
-import React from "react";
+import HeroSlider from "../Components/home/HeroSlider";
 
-const Home = () => {
+export default function Home() {
     return (
-        <div>
-            <h2>This is home </h2>
-        </div>
+        <>
+            <HeroSlider />
+        </>
     );
-};
-
-export default Home;
+}
