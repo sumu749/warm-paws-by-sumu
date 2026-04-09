@@ -1,0 +1,74 @@
+[
+    {
+        "serviceId": 1,
+        "serviceName": "Winter Coat Fitting for Dogs",
+        "providerName": "PawCare Studio",
+        "providerEmail": "info@pawcare.com",
+        "price": 25,
+        "rating": 4.9,
+        "slotsAvailable": 4,
+        "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+        "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b",
+        "category": "Clothing"
+    },
+    {
+        "serviceId": 2,
+        "serviceName": "Winter Grooming & Paw Treatment",
+        "providerName": "CozyPets Grooming",
+        "providerEmail": "hello@cozypets.com",
+        "price": 30,
+        "rating": 4.8,
+        "slotsAvailable": 3,
+        "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+        "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a",
+        "category": "Grooming"
+    },
+    {
+        "serviceId": 3,
+        "serviceName": "Heated Pet Boarding",
+        "providerName": "WarmNest Care",
+        "providerEmail": "stay@warmnest.com",
+        "price": 45,
+        "rating": 4.7,
+        "slotsAvailable": 5,
+        "description": "Indoor heated boarding facility ensuring comfort during cold nights.",
+        "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b",
+        "category": "Boarding"
+    },
+    {
+        "serviceId": 4,
+        "serviceName": "Winter Health Checkup",
+        "providerName": "SnowVet Clinic",
+        "providerEmail": "care@snowvet.com",
+        "price": 40,
+        "rating": 4.9,
+        "slotsAvailable": 6,
+        "description": "Full seasonal health examination and vaccination consultation.",
+        "image": "https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "category": "Healthcare"
+    },
+    {
+        "serviceId": 5,
+        "serviceName": "Indoor Play & Exercise",
+        "providerName": "HappyTail Center",
+        "providerEmail": "play@happytail.com",
+        "price": 20,
+        "rating": 4.6,
+        "slotsAvailable": 8,
+        "description": "Fun indoor activities to keep pets active during winter days.",
+        "image": "https://images.unsplash.com/photo-1558788353-f76d92427f16",
+        "category": "Exercise"
+    },
+    {
+        "serviceId": 6,
+        "serviceName": "Winter Nutrition Planning",
+        "providerName": "PetDiet Experts",
+        "providerEmail": "diet@petdiet.com",
+        "price": 35,
+        "rating": 4.8,
+        "slotsAvailable": 2,
+        "description": "Personalized winter diet plans to maintain energy and immunity.",
+        "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1",
+        "category": "Nutrition"
+    }
+]
