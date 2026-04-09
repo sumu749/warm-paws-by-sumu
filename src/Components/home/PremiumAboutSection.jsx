@@ -54,7 +54,7 @@ export default function PremiumAboutSection() {
     const [activeTab, setActiveTab] = useState("team");
 
     const tabs = [
-        { key: "team", label: "Our Team" },
+        { key: "team", label: "Our Experts" },
         { key: "clinic", label: "Our Clinic" },
         { key: "philosophy", label: "Our Philosophy" },
     ];

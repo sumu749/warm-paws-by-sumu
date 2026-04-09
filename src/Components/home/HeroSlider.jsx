@@ -63,7 +63,7 @@ export default function HeroSlider() {
                                     during cold seasons.
                                 </p>
                                 <div className="flex justify-center items-center">
-                                    <button className="btn btn-accent">
+                                    <button className="btn btn-primary">
                                         Book Appointment
                                     </button>
                                 </div>
