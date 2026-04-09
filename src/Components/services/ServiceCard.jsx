@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 export default function ServiceCard({ service }) {
-    const { serviceName, image, rating, price, serviceId } = service;
+    const { serviceName, image, rating, price } = service;
 
     return (
         <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition duration-300">
@@ -28,7 +28,7 @@ export default function ServiceCard({ service }) {
                 {/* Button */}
                 <div className="card-actions justify-center mt-4">
                     <Link
-                        to={`/service-details?id=${serviceId}`}
+                        to={`/service/${service.serviceId}`}
                         className="btn btn-primary btn-sm"
                     >
                         View Details

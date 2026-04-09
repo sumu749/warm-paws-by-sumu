@@ -14,15 +14,43 @@ export default function Navbar() {
 
     const navLinks = (
         <>
-            <NavLink to="/" className="hover:text-primary">
+            <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                    `transition-colors ${
+                        isActive
+                            ? "text-primary font-semibold"
+                            : "hover:text-primary"
+                    }`
+                }
+            >
                 Home
             </NavLink>
-            <NavLink to="/services" className="hover:text-primary">
+            <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                    `transition-colors ${
+                        isActive
+                            ? "text-primary font-semibold"
+                            : "hover:text-primary"
+                    }`
+                }
+            >
                 Services
             </NavLink>
 
             {user && (
-                <NavLink to="/profile" className="hover:text-primary">
+                <NavLink
+                    to="/profile"
+                    className={({ isActive }) =>
+                        `transition-colors ${
+                            isActive
+                                ? "text-primary font-semibold"
+                                : "hover:text-primary"
+                        }`
+                    }
+                >
                     My Profile
                 </NavLink>
             )}
