@@ -28,7 +28,7 @@ export default function ServiceCard({ service }) {
                 {/* Button */}
                 <div className="card-actions justify-center mt-4">
                     <Link
-                        to={`/service/${service.serviceId}`}
+                        to={`/services/${service.serviceId}`}
                         className="btn btn-primary btn-sm"
                     >
                         View Details

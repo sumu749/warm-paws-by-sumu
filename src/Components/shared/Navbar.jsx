@@ -58,7 +58,7 @@ export default function Navbar() {
     );
 
     return (
-        <nav className="fixed w-full bg-base-100/80 backdrop-blur-md shadow-md z-50">
+        <nav className="sticky top-0 z-50 w-full bg-base-100/80 backdrop-blur-md shadow-md">
             {/* Top bar */}
             <div className="bg-primary text-primary-content text-sm py-2">
                 <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">

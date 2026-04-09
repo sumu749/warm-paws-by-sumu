@@ -10,7 +10,7 @@ export default function Login() {
     const location = useLocation();
     const [showPassword, setShowPassword] = useState(false);
 
-    const from = location.state || "/";
+    const from = location.state?.from?.pathname || "/";
 
     const handleLogin = (e) => {
         e.preventDefault();
