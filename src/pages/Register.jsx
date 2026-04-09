@@ -2,9 +2,12 @@ import { useContext } from "react";
 import { AuthContext } from "../firebase/AuthProvider";
 import { useNavigate, Link } from "react-router";
 import toast from "react-hot-toast";
+import { Eye, EyeOff } from "lucide-react";
+import { useState } from "react";
 
 export default function Register() {
     const { registerUser, updateUser, googleLogin } = useContext(AuthContext);
+    const [showPassword, setShowPassword] = useState(false);
 
     const navigate = useNavigate();
 
@@ -77,13 +80,27 @@ export default function Register() {
                     required
                 />
 
-                <input
-                    name="password"
-                    type="password"
-                    placeholder="Password"
-                    className="input input-bordered w-full mb-3"
-                    required
-                />
+                {/* Password Field */}
+                <div className="relative mb-3">
+                    <input
+                        name="password"
+                        type={showPassword ? "text" : "password"}
+                        placeholder="Password"
+                        className="input input-bordered w-full pr-10"
+                        required
+                    />
+
+                    <span
+                        onClick={() => setShowPassword(!showPassword)}
+                        className="absolute right-3 top-3 cursor-pointer text-gray-500"
+                    >
+                        {showPassword ? (
+                            <EyeOff size={18} />
+                        ) : (
+                            <Eye size={18} />
+                        )}
+                    </span>
+                </div>
 
                 <button className="btn btn-primary w-full">Register</button>
 

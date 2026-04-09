@@ -6,6 +6,8 @@ import Register from "../pages/Register";
 import Profile from "../pages/Profile";
 import ServiceDetails from "../pages/ServiceDetails";
 import ForgotPassword from "../pages/ForgotPassword";
+import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
     {
@@ -26,15 +28,31 @@ const router = createBrowserRouter([
             },
             {
                 path: "profile",
-                element: <Profile />,
+                element: (
+                    <PrivateRoute>
+                        <Profile />
+                    </PrivateRoute>
+                ),
             },
             {
                 path: "service-details",
-                element: <ServiceDetails />,
+                element: (
+                    <PrivateRoute>
+                        <ServiceDetails />
+                    </PrivateRoute>
+                ),
             },
             {
                 path: "forgot-password",
-                element: <ForgotPassword />,
+                element: (
+                    <PrivateRoute>
+                        <ForgotPassword />
+                    </PrivateRoute>
+                ),
+            },
+            {
+                path: "*",
+                element: <ErrorPage />,
             },
         ],
     },

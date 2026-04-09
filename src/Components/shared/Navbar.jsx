@@ -100,10 +100,11 @@ export default function Navbar() {
                                 <div className="avatar">
                                     <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                         <img
-                                            src={
-                                                user.photoURL ||
+                                            src={`${
+                                                user?.photoURL ||
                                                 "https://i.ibb.co/4pDNDk1/avatar.png"
-                                            }
+                                                // eslint-disable-next-line react-hooks/purity
+                                            }?t=${Date.now()}`}
                                             alt="user"
                                         />
                                     </div>

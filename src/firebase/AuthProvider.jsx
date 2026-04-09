@@ -38,10 +38,17 @@ const AuthProvider = ({ children }) => {
     };
 
     //  Update Profile
-    const updateUser = (name, photo) => {
-        return updateProfile(auth.currentUser, {
+    const updateUser = async (name, photo) => {
+        await updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: photo,
+        });
+
+        // force refresh user
+        setUser({
+            ...auth.currentUser,
+            displayName: auth.currentUser.displayName,
+            photoURL: auth.currentUser.photoURL,
         });
     };
 
