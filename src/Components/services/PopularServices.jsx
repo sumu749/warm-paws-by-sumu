@@ -11,7 +11,7 @@ export default function PopularServices() {
                         Popular Winter Care Services
                     </h2>
                     <p className="text-gray-500 mt-2">
-                        Keep your pets warm, healthy, and happy this winter ❄️
+                        Keep your pets warm, healthy, and happy this winter
                     </p>
                 </div>
 
