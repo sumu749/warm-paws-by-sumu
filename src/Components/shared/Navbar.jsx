@@ -112,7 +112,7 @@ export default function Navbar() {
 
                             <button
                                 onClick={handleLogout}
-                                className="btn btn-accent btn-sm"
+                                className="btn btn-primary btn-sm"
                             >
                                 Logout
                             </button>
