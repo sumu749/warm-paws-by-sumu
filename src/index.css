@@ -5,3 +5,15 @@
 body {
     font-family: "Nunito", sans-serif;
 }
+
+/* Hide browser's default password reveal button */
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-outer-spin-button,
+input[type="password"]::-webkit-inner-spin-button {
+    display: none !important;
+}
+
+/* For Firefox and other browsers */
+input[type="password"]::placeholder {
+    opacity: 1;
+}
