@@ -6,7 +6,7 @@
 
 ## Live URL
 
-The application is deployed and live on **Firebase Hosting**. Visit the site to explore available pet care services.
+The application is deployed and live on **[Firebase Hosting](https://warm-paws-config.web.app/)**. Visit the site to explore available pet care services.
 
 ## Key Features
 
