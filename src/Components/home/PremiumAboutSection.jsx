@@ -8,27 +8,33 @@ import {
     FaLinkedinIn,
     FaInstagram,
 } from "react-icons/fa";
+import shantoImg from "../../assets/Image/shanto.png";
+import shanto2Img from "../../assets/Image/shanto-2.png";
+import doc1Img from "../../assets/Image/doc1.avif";
+import doc2Img from "../../assets/Image/doc2.avif";
+import clinicImg from "../../assets/Image/clinic.avif";
+import petCareImg from "../../assets/Image/petCare.avif";
 
 const team = [
     {
         name: "Dr. Asadul Islam Shanto",
         role: "Senior Veterinarian",
-        image: "/src/assets/Image/shanto.png",
+        image: shantoImg,
     },
     {
         name: "Lord Shanto",
         role: "Pet Care Specialist",
-        image: "/src/assets/Image/shanto-2.png",
+        image: shanto2Img,
     },
     {
         name: "Dr. Nancy May",
         role: "Surgery Specialist",
-        image: "/src/assets/Image/doc1.avif",
+        image: doc1Img,
     },
     {
         name: "Dr. Amelie Plin",
         role: "Veterinary Consultant",
-        image: "/src/assets/Image/doc2.avif",
+        image: doc2Img,
     },
 ];
 
@@ -107,7 +113,7 @@ export default function PremiumAboutSection() {
 
                                 <motion.img
                                     whileHover={{ scale: 1.03 }}
-                                    src="/src/assets/Image/clinic.avif"
+                                    src={clinicImg}
                                     alt="Veterinary clinic"
                                     className="w-full rounded-3xl shadow-2xl object-cover"
                                 />
@@ -168,7 +174,7 @@ export default function PremiumAboutSection() {
 
                             <motion.img
                                 whileHover={{ scale: 1.03 }}
-                                src="/src/assets/Image/petCare.avif"
+                                src={petCareImg}
                                 alt="Our philosophy"
                                 className="w-full rounded-3xl shadow-2xl object-cover"
                             />
